@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace RentACar.Datas.Repositories
 {
-    internal interface Interface1
+    public interface IRepository<T>
     {
+        int Add(T entity);
+        int Update(T entity);
+        int Delete(T entity);
+        List<T> GetAll();
+        T GetById(int id);
     }
 }
