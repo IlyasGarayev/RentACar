@@ -20,6 +20,8 @@ namespace RentACar.Datas.Models
         public int Mileage { get; set; }
         public DateTime CreatedDate { get; set; }
         public User RentedBy { get; set; }
+
+
     }
 
 }
